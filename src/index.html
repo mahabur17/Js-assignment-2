@@ -4,9 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/6be06afa3c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="output.css">
 </head>
-<body>
-   
+<body class="bg-[#121226] flex items-center justify-center min-h-screen p-4">
+
+    <div class="bg-[#81fff5a4] w-[45%]  p-8 rounded-xl shadow-2xl">
+
+        <h1 class="text-white text-center text-3xl font-bold mt-4 mb-8 tracking-wider">
+            ToDo List!
+        </h1>
+
+        <div class="flex space-x-3">
+            <input 
+                type="text" 
+                placeholder="Add your new ToDo..." 
+                id="maininput"
+                class=" flex-grow px-3 rounded-lg border-none focus:outline-none focus:border-none bg-[#fff] text-gray-800 text-lg shadow-inner "
+            >
+            
+            <button class="bg-purple-600 text-white p-3 rounded-lg w-12 h-12 flex items-center justify-center text-2xl font-bold transition duration-150 ease-in-out hover:bg-purple-500 active:bg-purple-700" id="addbtn">
+                +
+            </button>
+        </div>
+<!-- inputs -->
+        <div class="inputs mt-8 hidden overflow-y-auto">
+
+
+
+            <div class="input w-full bg-[#fff] flex justify-between items-center p-3 rounded-[8px]">
+                <p class="kire text-[1.2rem]"></p>
+
+               <div class="flex space-x-2">
+            <button class="bg-green-600 text-white w-10 h-10 rounded-md flex items-center justify-center text-xl transition duration-150 ease-in-out hover:bg-green-500 active:bg-green-700">
+                <i class="fas fa-check"></i>
+            </button>
+
+            <button class="bg-yellow-500 text-white w-10 h-10 rounded-md flex items-center justify-center text-xl transition duration-150 ease-in-out hover:bg-yellow-400 active:bg-yellow-600">
+                <i class="fas fa-pencil-alt"></i>
+            </button>
+
+            <button class="bg-red-600 text-white w-10 h-10 rounded-md flex items-center justify-center text-xl transition duration-150 ease-in-out hover:bg-red-500 active:bg-red-700">
+                <i class="fas fa-trash-alt"></i>
+            </button>
+        </div>
+
+            </div>
+
+
+
+        </div>
+        <!-- inputs end -->
+
+    </div>
+<script src="script.js"></script>
 </body>
 </html>
