@@ -60,9 +60,12 @@ editbtn.addEventListener('click',()=>{
     
     let editinput = newDiv.querySelector('#editInput');
     editinput.focus();
-    editinput.style.border='none'
+   editinput.style.border = 'none';
+   editinput.style.outline = 'none';
+    editinput.style.borderBottom = '2px solid black';
 
   editbtn.innerHTML='<i class="fa-solid fa-floppy-disk"></i>'
+ 
   }
 
  else if (editbtn.innerHTML.includes('fa-floppy-disk')) {
@@ -72,6 +75,9 @@ editbtn.addEventListener('click',()=>{
 
     
     editbtn.innerHTML = '<i class="fas fa-pencil-alt"></i>';
+  }
+  else if(editinput.value!=""){
+    alert('please insert a value')
   }
 })
 
